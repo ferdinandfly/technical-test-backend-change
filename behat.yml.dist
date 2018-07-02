@@ -1,0 +1,12 @@
+default:
+    suites:
+        default:
+            contexts:
+                - FeatureContext:
+                    client : '@test.client'
+
+    extensions:
+        Behat\Symfony2Extension:
+            kernel:
+                bootstrap: features/bootstrap/bootstrap.php
+                class: App\Kernel
